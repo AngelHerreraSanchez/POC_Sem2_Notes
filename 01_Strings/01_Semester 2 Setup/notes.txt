@@ -1,0 +1,18 @@
+This semester we will have 2 repositories to pull from
+
+The notes will be in a repo called POC_Sem2_Notes
+
+These notes will be public so you don't need to setup any collaboration with them.   
+
+Assignments will be given through a separate repo called POC_Sem2_Assignments
+
+Today we will fork this repo to our github account.  You will have to periodically sync
+this fork so that you can get the updated assignment descriptions.  
+
+Folders will be automatically created for you.  You will have a file called
+Description.txt next to a 
+file that is called Assignment.py in every folder.  
+Description.txt will contain the instructions.  
+Assignment.py will be where you submit your work.   
+When done you will have to sync your repo just like before.  
+Please paste a link to your work in the Code HS assignment section so that it can be graded.  
