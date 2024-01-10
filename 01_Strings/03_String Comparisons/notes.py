@@ -1,22 +1,22 @@
-# 'Python' == 'Python'
+# print('Python' == 'Python')
 
-# 'Python' == 'python'
+# print('Python' == 'python')
 
-# 'Python' != 'python'
+# print('Python' != 'python')
 
-# 'Python' == 'Pytho'
+# print('Python' == 'Pytho')
 
-# 'I love Python' < 'I love python'
+#print('I love Python' < 'I love python')
 
-# 'Pythonist' > 'Python'
+#print('Pythonist' > 'Python')
 
-# 'Pythonist' > 'Z'
+#print('Pythonist' > 'Z')
 
-# '20' > '8'
+#print('20' > '8')
 
-# 10 == '10'
+#print(10 == '10')
 
-# 10 != '10'
+# print(10 != '10')
 
-# 10 > '10'
+# print(10 > '10')
 
