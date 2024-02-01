@@ -3,4 +3,5 @@ def calculate_inverse(number):
   return 1/number
 
 
-calculate_inverse(0)
+number = int(input("Enter a number: "))
+print(calculate_inverse(number))
