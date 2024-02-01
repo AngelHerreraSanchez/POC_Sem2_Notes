@@ -1,19 +1,11 @@
-try:
-    value = int(input('Enter an int: '))
-    print(1/value)
-except:
-    print('Something went wrong')
-else:
-    print('Eveyrthing is perfect')
-    
-try:
-    value = int(input('Enter an int: '))
-    print(1/value)
-except:
-    print('Something went wrong')
-else:
-    print('Eveyrthing is perfect')
-    
+# try:
+#     value = int(input('Enter an int: '))
+#     print(1/value)
+# except:
+#     print('Something went wrong')
+# else:
+#     print('Everything is perfect')
+      
 
 def get_inverse(x):
     try:
@@ -24,7 +16,8 @@ def get_inverse(x):
         print('I am always printed!')
 
 
-print(get_inverse(5))
+# answer = get_inverse(5)
+# print(answer)
 
-
-print(get_inverse(0))
+answer = get_inverse(0)
+print(answer)
