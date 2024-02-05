@@ -1,0 +1,1 @@
+https://joshdimella.com/blog/python-typing-best-practices#how-to-use-python-type-hints

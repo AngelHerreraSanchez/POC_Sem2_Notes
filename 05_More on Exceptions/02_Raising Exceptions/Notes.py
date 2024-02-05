@@ -25,6 +25,7 @@
 
 def return_reverse(x):
     try:
+        value = int(input("Hi There"))
         return 1/x
     except:
         print('Something went wrong')
