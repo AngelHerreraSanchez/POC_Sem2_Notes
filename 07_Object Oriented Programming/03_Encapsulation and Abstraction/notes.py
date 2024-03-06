@@ -1,6 +1,6 @@
 class Car():
     def __init__(self, model, colour, initial_speed=0):
-        self.model = model
+        self.__model = model
         self.colour = colour
         if initial_speed < 0:
             self.__speed = 0
@@ -21,5 +21,10 @@ class Car():
 
 
 my_lovely_car = Car('T-Roc', 'red', -50)
-my_lovely_car.speed = -10
 my_lovely_car.show_speed()
+
+my_lovely_car.__speed = 10
+print(my_lovely_car.__speed)
+
+my_lovely_car.show_speed()
+
