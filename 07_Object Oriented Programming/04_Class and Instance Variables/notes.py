@@ -1,3 +1,4 @@
+
 # class Dog():
 #     def __init__(self, name, age):
 #         self.name = name
@@ -17,9 +18,9 @@
 # kates_pet = Dog('Foxy', 5)
 # adams_pet = Dog('Luna', 1)
 
-# print(my_pet.counter)
-# print(kates_pet.counter)
-# print(adams_pet.counter)
+# # print(my_pet.counter)
+# # print(kates_pet.counter)
+# # print(adams_pet.counter)
 
 # print(Dog.counter)
 # Dog.counter += 1
@@ -59,6 +60,7 @@ class MathUtility:
             return -number
         else:
             return number
+      
         
 print(MathUtility.pi())
 print(MathUtility.e())
