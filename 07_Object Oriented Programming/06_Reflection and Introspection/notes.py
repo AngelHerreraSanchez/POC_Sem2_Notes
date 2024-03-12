@@ -2,7 +2,7 @@ def empty_strings(user_object):
     for prop_name in user_object.__dict__.keys():
         prop_value = getattr(user_object, prop_name)
         if isinstance(prop_value, str):
-            setattr(user_object, prop_name, '')
+            setattr(user_object, prop_name, 'Charlie')
 
 
 class Doctor():
@@ -32,3 +32,4 @@ doc_alex = Doctor('Alexander', 'Smith')
 doc_alex.introduce()
 empty_strings(doc_alex)
 doc_alex.introduce()
+print(doc_alex.last_name)
