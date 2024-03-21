@@ -41,13 +41,13 @@
 
 # apply_func([1, 2, 3, 4, 5], lambda x: x * x * x)
 
-my_func2 = lambda x: 1 if x else 2
+# my_func2 = lambda x: 1 if x else 2
 
-def printThenReturnSum(x, y):
-    sum = x + y
-    print(sum)
-    return sum
+# def printThenReturnSum(x, y):
+#     sum = x + y
+#     print(sum)
+#     return sum
 
-printThenReturnSumVar = lambda x, y: printThenReturnSum(x, y)
+# printThenReturnSumVar = lambda x, y: printThenReturnSum(x, y)
 
-print(printThenReturnSumVar(3, 4))
+# print(printThenReturnSumVar(3, 4))

@@ -1,7 +1,7 @@
-# def lambda_func(i): return i * 2
-# my_func = lambda i: i * 2
+def lambda_func(i): return i * 2
+my_func = lambda i: i * 2
 
-# initial_list = [1, 2, 3, 4, 5]
+initial_list = [1, 2, 3, 4, 5]
 
 
 
@@ -26,9 +26,6 @@
 # new_list = list(map_result)
 # print(new_list)
 
-# # def lambda_func(i): return i * 2
-
-
 # print(list(map(lambda i: i * 2, [1, 2, 3, 4, 5])))
 
 # print(list(filter(lambda i: i % 2 == 0, [1, 2, 3, 4, 5, 6, 7, 8])))
@@ -41,8 +38,9 @@
 #     'whereareyou@mywebsite.co.uk',
 #     'fs3dfss'
 # ]
-# emails = list(filter(lambda x: '@' in x, emails))
-# print(emails)
+# valid_emails = list(filter(lambda x: '@' in x, emails))
+# print(valid_emails)
+
 
 # def greet(text):
 
