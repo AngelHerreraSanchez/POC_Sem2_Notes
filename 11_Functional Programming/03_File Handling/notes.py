@@ -1,5 +1,5 @@
 # try:
-#     stream = open('C:\\Users\\Nicholas Armstrong\\Development\\POC_Sem2_Notes\\11_Functional Programming\\03_File Handling\\animals.txt')
+#     stream = open("C:\\Users\\Nicholas Armstrong\\Development\\POC_Sem2_Notes\\11_Functional Programming\\03_File Handling\\animals.txt")
 #     # your code goes here
 #     stream.close()
 # except Exception as e:
