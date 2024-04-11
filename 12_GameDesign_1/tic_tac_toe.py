@@ -54,55 +54,51 @@ def place_piece(grid_spot : int):
                 "Enter a number (1-9) where to put the piece: ")
         grid_spot = int(user_choice)
     grid[row][col] = current_piece 
- 
-def check_row_for_win():
-    for row in range(len(grid)):
-        current_row = grid[row]
-        if current_row[0].__eq__(current_row[1]) and current_row[1].__eq__(current_row[2]):
+
+def check_row():
+    for row in range(3):
+        if grid[row][0].__eq__(grid[row][1]) and grid[row][1].__eq__(grid[row][2]):
             return True
     return False
 
-
-def check_col_for_win():
+def check_col():
     for col in range(3):
         if grid[0][col].__eq__(grid[1][col]) and grid[1][col].__eq__(grid[2][col]):
             return True
     return False
 
-def check_left_diag_for_win():
+def check_left_diag():
     return grid[0][0].__eq__(grid[1][1]) and grid[1][1].__eq__(grid[2][2])
 
-
-def check_right_diag_for_win():
+def check_right_diag():
     return grid[0][2].__eq__(grid[1][1]) and grid[1][1].__eq__(grid[2][0])
 
 def check_draw():
     for row in range(3):
         for col in range(3):
             if grid[row][col].isnumeric():
-               return False
-    return True
-        
- 
-def check_end():
-    if(check_row_for_win()):
+                return False
+    return True           
+    
+def check_game_over():
+    if check_row():
         print(current_piece + " wins!")
-        return True
-    elif(check_col_for_win()):
+        return True   
+    elif check_col():
         print(current_piece + " wins!")
-        return True
-    elif(check_left_diag_for_win()):
+        return True 
+    elif check_left_diag():
         print(current_piece + " wins!")
-        return True
-    elif(check_right_diag_for_win()):
+        return True 
+    elif check_right_diag():
         print(current_piece + " wins!")
-        return True
-    elif(check_draw()):
-        print("The game is a draw")
-        return True
+        return True 
+    elif check_draw():
+        print("Game is a draw!")
+        return True 
     else:
         return False
-
+    
 def game_loop():
     global current_piece
     print("Welcome to TIC TAC TOE")
@@ -115,11 +111,11 @@ def game_loop():
             break
         grid_spot = int(user_choice)
         place_piece(grid_spot)
-        if(check_end()):
+        if (check_game_over()):
+            print_grid()
             break
         current_piece = "O" if current_piece.__eq__("X") else "X"
         user_choice = ""
-    print_grid()
     print("GAME OVER")
         
 game_loop()
