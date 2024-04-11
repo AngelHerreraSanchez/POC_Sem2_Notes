@@ -1,0 +1,80 @@
+# Summary
+
+Date : 2024-04-11 08:02:15
+
+Directory c:\\Users\\Nicholas Armstrong\\Development\\POC_Sem2_Notes
+
+Total : 53 files,  665 codes, 446 comments, 523 blanks, all 1634 lines
+
+Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Languages
+| language | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Python | 34 | 495 | 446 | 465 | 1,406 |
+| Java | 15 | 130 | 0 | 22 | 152 |
+| Markdown | 4 | 40 | 0 | 36 | 76 |
+
+## Directories
+| path | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| . | 53 | 665 | 446 | 523 | 1,634 |
+| 01_Strings | 4 | 31 | 51 | 57 | 139 |
+| 01_Strings\\02_Basic String Operations | 1 | 31 | 6 | 25 | 62 |
+| 01_Strings\\03_String Comparisons | 1 | 0 | 11 | 12 | 23 |
+| 01_Strings\\04_Join, Split, and Sort Strings | 1 | 0 | 8 | 6 | 14 |
+| 01_Strings\\05_Search Strings | 1 | 0 | 26 | 14 | 40 |
+| 03_Generators and Exceptions | 6 | 74 | 35 | 39 | 148 |
+| 03_Generators and Exceptions\\01_Generators | 1 | 9 | 5 | 7 | 21 |
+| 03_Generators and Exceptions\\02_Exceptions and Syntax Errors | 1 | 9 | 16 | 9 | 34 |
+| 03_Generators and Exceptions\\03_Exception Hierarchy | 1 | 2 | 14 | 8 | 24 |
+| 03_Generators and Exceptions\\04_Propagating Exceptions | 2 | 49 | 0 | 12 | 61 |
+| 03_Generators and Exceptions\\05_Assertion Exception | 1 | 5 | 0 | 3 | 8 |
+| 05_More on Exceptions | 3 | 26 | 24 | 19 | 69 |
+| 05_More on Exceptions\\01_Else and Finally | 2 | 18 | 9 | 7 | 34 |
+| 05_More on Exceptions\\02_Raising Exceptions | 1 | 8 | 15 | 12 | 35 |
+| 06_Types, Modules, and Packages | 8 | 82 | 72 | 111 | 265 |
+| 06_Types, Modules, and Packages\\01_Type Annotations | 3 | 54 | 1 | 56 | 111 |
+| 06_Types, Modules, and Packages\\01_Type Annotations (Files) | 1 | 22 | 1 | 42 | 65 |
+| 06_Types, Modules, and Packages\\01_Type Annotations\\JavaExamples | 2 | 32 | 0 | 14 | 46 |
+| 06_Types, Modules, and Packages\\01_Type Annotations\\JavaExamples (Files) | 1 | 10 | 0 | 9 | 19 |
+| 06_Types, Modules, and Packages\\01_Type Annotations\\JavaExamples\\src | 1 | 22 | 0 | 5 | 27 |
+| 06_Types, Modules, and Packages\\02_Modules, Import and Math | 1 | 8 | 46 | 22 | 76 |
+| 06_Types, Modules, and Packages\\03_Platform and Random Modules | 1 | 6 | 25 | 28 | 59 |
+| 06_Types, Modules, and Packages\\04_Making Modules | 3 | 14 | 0 | 5 | 19 |
+| 06_Types, Modules, and Packages\\04_Making Modules\\ArmstrongModules | 2 | 9 | 0 | 2 | 11 |
+| 06_Types, Modules, and Packages\\04_Making Modules\\Pip | 1 | 5 | 0 | 3 | 8 |
+| 07_Object Oriented Programming | 24 | 270 | 179 | 200 | 649 |
+| 07_Object Oriented Programming\\01_Intro | 5 | 44 | 8 | 26 | 78 |
+| 07_Object Oriented Programming\\01_Intro (Files) | 2 | 18 | 8 | 13 | 39 |
+| 07_Object Oriented Programming\\01_Intro\\JavaExample | 3 | 26 | 0 | 13 | 39 |
+| 07_Object Oriented Programming\\01_Intro\\JavaExample (Files) | 1 | 10 | 0 | 9 | 19 |
+| 07_Object Oriented Programming\\01_Intro\\JavaExample\\src | 2 | 16 | 0 | 4 | 20 |
+| 07_Object Oriented Programming\\02_Objects and Classes | 1 | 4 | 40 | 16 | 60 |
+| 07_Object Oriented Programming\\03_Encapsulation and Abstraction | 1 | 22 | 0 | 9 | 31 |
+| 07_Object Oriented Programming\\04_Class and Instance Variables | 1 | 15 | 31 | 30 | 76 |
+| 07_Object Oriented Programming\\05_Methods | 2 | 47 | 2 | 13 | 62 |
+| 07_Object Oriented Programming\\05_Methods (Files) | 1 | 23 | 2 | 7 | 32 |
+| 07_Object Oriented Programming\\05_Methods\\05_Methods | 1 | 24 | 0 | 6 | 30 |
+| 07_Object Oriented Programming\\06_Reflection and Introspection | 1 | 27 | 0 | 9 | 36 |
+| 07_Object Oriented Programming\\07_Inheritance | 1 | 23 | 25 | 31 | 79 |
+| 07_Object Oriented Programming\\08_Misc | 12 | 88 | 73 | 66 | 227 |
+| 07_Object Oriented Programming\\08_Misc (Files) | 1 | 14 | 73 | 49 | 136 |
+| 07_Object Oriented Programming\\08_Misc\\JavaExample | 11 | 74 | 0 | 17 | 91 |
+| 07_Object Oriented Programming\\08_Misc\\JavaExample\\Example | 11 | 74 | 0 | 17 | 91 |
+| 07_Object Oriented Programming\\08_Misc\\JavaExample\\Example (Files) | 1 | 10 | 0 | 9 | 19 |
+| 07_Object Oriented Programming\\08_Misc\\JavaExample\\Example\\bin | 5 | 38 | 0 | 0 | 38 |
+| 07_Object Oriented Programming\\08_Misc\\JavaExample\\Example\\src | 5 | 26 | 0 | 8 | 34 |
+| 11_Functional Programming | 7 | 71 | 85 | 79 | 235 |
+| 11_Functional Programming\\01_Lambdas | 1 | 0 | 28 | 26 | 54 |
+| 11_Functional Programming\\02_Maps, Filter, Closures | 4 | 51 | 35 | 41 | 127 |
+| 11_Functional Programming\\02_Maps, Filter, Closures (Files) | 1 | 13 | 35 | 27 | 75 |
+| 11_Functional Programming\\02_Maps, Filter, Closures\\JavaExample | 3 | 38 | 0 | 14 | 52 |
+| 11_Functional Programming\\02_Maps, Filter, Closures\\JavaExample (Files) | 1 | 10 | 0 | 9 | 19 |
+| 11_Functional Programming\\02_Maps, Filter, Closures\\JavaExample\\bin | 1 | 18 | 0 | 0 | 18 |
+| 11_Functional Programming\\02_Maps, Filter, Closures\\JavaExample\\src | 1 | 10 | 0 | 5 | 15 |
+| 11_Functional Programming\\03_File Handling | 1 | 8 | 22 | 8 | 38 |
+| 11_Functional Programming\\04_Custom Exceptions | 1 | 12 | 0 | 4 | 16 |
+| 12_GameDesign_1 | 1 | 111 | 0 | 18 | 129 |
+
+Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

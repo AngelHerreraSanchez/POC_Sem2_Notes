@@ -1,0 +1,55 @@
+"filename", "language", "Python", "Java", "Markdown", "comment", "blank", "total"
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\01_Strings\02_Basic String Operations\notes.py", "Python", 31, 0, 0, 6, 25, 62
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\01_Strings\03_String Comparisons\notes.py", "Python", 0, 0, 0, 11, 12, 23
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\01_Strings\04_Join, Split, and Sort Strings\notes.py", "Python", 0, 0, 0, 8, 6, 14
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\01_Strings\05_Search Strings\notes.py", "Python", 0, 0, 0, 26, 14, 40
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\01_Generators\notes.py", "Python", 9, 0, 0, 5, 7, 21
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\02_Exceptions and Syntax Errors\notes.py", "Python", 9, 0, 0, 16, 9, 34
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\03_Exception Hierarchy\notes.py", "Python", 2, 0, 0, 14, 8, 24
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\04_Propagating Exceptions\notes.py", "Python", 20, 0, 0, 0, 4, 24
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\04_Propagating Exceptions\notes2.py", "Python", 29, 0, 0, 0, 8, 37
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\03_Generators and Exceptions\05_Assertion Exception\notes.py", "Python", 5, 0, 0, 0, 3, 8
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\05_More on Exceptions\01_Else and Finally\Notes.py", "Python", 9, 0, 0, 9, 5, 23
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\05_More on Exceptions\01_Else and Finally\TestDebug.py", "Python", 9, 0, 0, 0, 2, 11
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\05_More on Exceptions\02_Raising Exceptions\Notes.py", "Python", 8, 0, 0, 15, 12, 35
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\01_Type Annotations\JavaExamples\README.md", "Markdown", 0, 0, 10, 0, 9, 19
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\01_Type Annotations\JavaExamples\src\App.java", "Java", 0, 22, 0, 0, 5, 27
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\01_Type Annotations\notes.py", "Python", 22, 0, 0, 1, 42, 65
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\02_Modules, Import and Math\notes.py", "Python", 8, 0, 0, 46, 22, 76
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\03_Platform and Random Modules\notes.py", "Python", 6, 0, 0, 25, 28, 59
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\04_Making Modules\ArmstrongModules\armstrong_math.py", "Python", 6, 0, 0, 0, 1, 7
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\04_Making Modules\ArmstrongModules\notes.py", "Python", 3, 0, 0, 0, 1, 4
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\06_Types, Modules, and Packages\04_Making Modules\Pip\notes.py", "Python", 5, 0, 0, 0, 3, 8
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\01_Intro\JavaExample\README.md", "Markdown", 0, 0, 10, 0, 9, 19
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\01_Intro\JavaExample\src\App.java", "Java", 0, 5, 0, 0, 1, 6
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\01_Intro\JavaExample\src\Rectangle.java", "Java", 0, 11, 0, 0, 3, 14
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\01_Intro\notes.py", "Python", 10, 0, 0, 8, 11, 29
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\01_Intro\test.py", "Python", 8, 0, 0, 0, 2, 10
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\02_Objects and Classes\notes.py", "Python", 4, 0, 0, 40, 16, 60
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\03_Encapsulation and Abstraction\notes.py", "Python", 22, 0, 0, 0, 9, 31
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\04_Class and Instance Variables\notes.py", "Python", 15, 0, 0, 31, 30, 76
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\05_Methods\05_Methods\notes.py", "Python", 24, 0, 0, 0, 6, 30
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\05_Methods\notes.py", "Python", 23, 0, 0, 2, 7, 32
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\06_Reflection and Introspection\notes.py", "Python", 27, 0, 0, 0, 9, 36
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\07_Inheritance\notes.py", "Python", 23, 0, 0, 25, 31, 79
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\README.md", "Markdown", 0, 0, 10, 0, 9, 19
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\bin\App.class", "Java", 0, 10, 0, 0, 0, 10
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\bin\ElectricVehicle.class", "Java", 0, 8, 0, 0, 0, 8
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\bin\HybridVehicle.class", "Java", 0, 9, 0, 0, 0, 9
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\bin\PetrolVehicle.class", "Java", 0, 9, 0, 0, 0, 9
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\bin\Vehicle.class", "Java", 0, 2, 0, 0, 0, 2
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\src\App.java", "Java", 0, 5, 0, 0, 1, 6
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\src\ElectricVehicle.java", "Java", 0, 6, 0, 0, 1, 7
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\src\HybridVehicle.java", "Java", 0, 6, 0, 0, 4, 10
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\src\PetrolVehicle.java", "Java", 0, 6, 0, 0, 1, 7
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\JavaExample\Example\src\Vehicle.java", "Java", 0, 3, 0, 0, 1, 4
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\07_Object Oriented Programming\08_Misc\notes.py", "Python", 14, 0, 0, 73, 49, 136
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\01_Lambdas\notes.py", "Python", 0, 0, 0, 28, 26, 54
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\02_Maps, Filter, Closures\JavaExample\README.md", "Markdown", 0, 0, 10, 0, 9, 19
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\02_Maps, Filter, Closures\JavaExample\bin\App.class", "Java", 0, 18, 0, 0, 0, 18
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\02_Maps, Filter, Closures\JavaExample\src\App.java", "Java", 0, 10, 0, 0, 5, 15
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\02_Maps, Filter, Closures\notes.py", "Python", 13, 0, 0, 35, 27, 75
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\03_File Handling\notes.py", "Python", 8, 0, 0, 22, 8, 38
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\11_Functional Programming\04_Custom Exceptions\notes.py", "Python", 12, 0, 0, 0, 4, 16
+"c:\Users\Nicholas Armstrong\Development\POC_Sem2_Notes\12_GameDesign_1\tic_tac_toe.py", "Python", 111, 0, 0, 0, 18, 129
+"Total", "-", 495, 130, 40, 446, 523, 1634
