@@ -71,36 +71,36 @@ def check_row():
     second_list = [last_col - 1, last_col, last_col + 1, last_col + 2]
     third_list = [last_col - 2, last_col - 1, last_col, last_col + 1]
     fourth_list = [last_col - 3, last_col - 2, last_col - 1, last_col]
-    if first_list[0] >= 0 and first_list[0] < 7 and first_list[3] >= 0 and first_list[3] < 7:
+    if(first_list[0] >= 0 and first_list[0] < 7 and first_list[3] >= 0 and first_list[3] < 7):
         one = grid[last_row][first_list[0]]
         two = grid[last_row][first_list[1]]
         three = grid[last_row][first_list[2]]
-        four = grid[last_row][first_list[3]] 
+        four = grid[last_row][first_list[3]]
         if one.__eq__(two) and two.__eq__(three) and three.__eq__(four):
-            return True                             
-    if second_list[0] >= 0 and second_list[0] < 7 and second_list[3] >= 0 and second_list[3] < 7:
+            return True
+    if (second_list[0] >= 0 and second_list[0] < 7 and second_list[3] >= 0 and second_list[3] < 7):
         one = grid[last_row][second_list[0]]
         two = grid[last_row][second_list[1]]
         three = grid[last_row][second_list[2]]
         four = grid[last_row][second_list[3]]
         if one.__eq__(two) and two.__eq__(three) and three.__eq__(four):
             return True
-    if third_list[0] >= 0 and third_list[0] < 7 and third_list[3] >= 0 and third_list[3] < 7:
+    if (third_list[0] >= 0 and third_list[0] < 7 and third_list[3] >= 0 and third_list[3] < 7):
         one = grid[last_row][third_list[0]]
         two = grid[last_row][third_list[1]]
         three = grid[last_row][third_list[2]]
         four = grid[last_row][third_list[3]]
         if one.__eq__(two) and two.__eq__(three) and three.__eq__(four):
             return True
-    if fourth_list[0] >= 0 and fourth_list[0] < 7 and fourth_list[3] >= 0 and fourth_list[3] < 7:
+    if (fourth_list[0] >= 0 and fourth_list[0] < 7 and fourth_list[3] >= 0 and fourth_list[3] < 7):
         one = grid[last_row][fourth_list[0]]
         two = grid[last_row][fourth_list[1]]
         three = grid[last_row][fourth_list[2]]
         four = grid[last_row][fourth_list[3]]
         if one.__eq__(two) and two.__eq__(three) and three.__eq__(four):
             return True
-
-
+    return False
+        
 def check_col():
     return False  # Actually Implement
 
