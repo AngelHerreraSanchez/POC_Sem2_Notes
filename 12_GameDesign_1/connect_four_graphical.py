@@ -68,6 +68,10 @@ def place_piece(col: int):
                 last_row = row
                 last_col = col
                 remaining_spots -= 1
+                if current_piece.__eq__("R"):
+                    draw_circle(row, col, red_color)
+                else:
+                    draw_circle(row, col, yellow_color)
                 break
             else:
                 row -= 1
