@@ -8,8 +8,12 @@ yellow_color = "#FFF600"
 grid_width = 420
 grid_height = grid_width
 diameter = grid_width / 7
+col_width = diameter
 total_rows = 6
 total_cols = 7
+is_game_over = False
+current_col_choice = -1
+piece_placed = False
 
 screen = Canvas(root, width=grid_width, height=grid_height, bg=grid_color)
 screen.pack()
@@ -56,33 +60,34 @@ def is_bad_choice(choice: str):
     return is_bad_num_string(choice)
 
 
-def place_piece(col: int):
+def place_piece():
     global last_row
     global last_col
     global remaining_spots
+    global current_col_choice
+    global piece_placed
     while (True):
         row = 5
         while (row >= 0):
-            if grid[row][col].__eq__("-"):
-                grid[row][col] = current_piece
+            if grid[row][current_col_choice].__eq__("-"):
+                grid[row][current_col_choice] = current_piece
                 last_row = row
-                last_col = col
+                last_col = current_col_choice
                 remaining_spots -= 1
+                piece_placed = True
                 if current_piece.__eq__("R"):
-                    draw_circle(row, col, red_color)
+                    draw_circle(row, current_col_choice, red_color)
                 else:
-                    draw_circle(row, col, yellow_color)
+                    draw_circle(row, current_col_choice, yellow_color)
                 break
             else:
                 row -= 1
         if row != -1:
             break
         else:
-            user_choice = ""
-            while (is_bad_num_string(user_choice)):
-                user_choice = input(
-                    "Enter a different number (0-6) where to drop the piece: ")
-            col = int(user_choice)
+            piece_placed = False
+            break
+
 
 
 def check_row():
@@ -154,28 +159,42 @@ def check_game_over():
         return True
     else:
         return False
-
-
-def game_loop():
+    
+def handle_click(e):
+    global is_game_over
     global current_piece
-    print("Welcome to CONNECT FOUR")
-    user_choice = ""
-    draw_grid()
-    while (True):
-        while (is_bad_choice(user_choice)):
-            user_choice = input(
-                "Enter STOP to end.  Or a number (0-6) where to drop the piece: ")
-        if user_choice.__eq__("STOP"):
-            break
-        column = int(user_choice)
-        place_piece(column)
-        if (check_game_over()):
-            break
+    global current_col_choice
+    global piece_placed
+    mouse_x = e.x
+    if mouse_x >= 0 * col_width and mouse_x < 1 * col_width:
+        current_col_choice = 0
+    elif mouse_x >= 1 * col_width and mouse_x < 2 * col_width:
+        current_col_choice = 1
+    elif mouse_x >= 2 * col_width and mouse_x < 3 * col_width:
+        current_col_choice = 2
+    elif mouse_x >= 3 * col_width and mouse_x < 4 * col_width:
+        current_col_choice = 3        
+    elif mouse_x >= 4 * col_width and mouse_x < 5 * col_width:
+        current_col_choice = 4
+    elif mouse_x >= 5 * col_width and mouse_x < 6 * col_width:
+        print(mouse_x)
+        current_col_choice = 5
+    elif mouse_x >= 6 * col_width and mouse_x < 7 * col_width:
+        current_col_choice = 6
+    if(not is_game_over):
+        place_piece()
+    if (not is_game_over and check_game_over()):
+        is_game_over = True
+    if(piece_placed):
         current_piece = "Y" if current_piece.__eq__("R") else "R"
-        user_choice = ""
-    print("GAME OVER")
+
+def print_intro():
+    print("Welcome to CONNECT FOUR")
+    draw_grid()
 
 
-game_loop()
+screen.bind("<Button-1>", handle_click)
+
+print_intro()
 
 mainloop()
