@@ -1,6 +1,7 @@
 from tkinter import *
 
 root = Tk()
+root.title("CONNECT FOUR")
 
 grid_color = "#003AFF"
 red_color = "#FF1800"
