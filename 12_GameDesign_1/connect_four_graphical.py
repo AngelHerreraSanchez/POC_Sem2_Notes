@@ -1,12 +1,13 @@
 from tkinter import *
 
 root = Tk()
+root.title = "CONNECT FOUR"
 
 grid_color = "#003AFF"
 red_color = "#FF1800"
 yellow_color = "#FFF600"
 grid_width = 420
-grid_height = grid_width
+grid_height = grid_width + 200
 diameter = grid_width / 7
 col_width = diameter
 total_rows = 6
@@ -20,6 +21,15 @@ screen.pack()
 
 
 grid = [
+    ["-", "-", "-", "-", "-", "-", "-"],     # [R0C0, ..., R0C6]
+    ["-", "-", "-", "-", "-", "-", "-"],     # [R1C0, ..., R1C6]
+    ["-", "-", "-", "-", "-", "-", "-"],     # [R2C0, ..., R2C6]
+    ["-", "-", "-", "-", "-", "-", "-"],     # [R3C0, ..., R3C6]
+    ["-", "-", "-", "-", "-", "-", "-"],     # [R4C0, ..., R4C6]
+    ["-", "-", "-", "-", "-", "-", "-"]      # [R5C0, ..., R5C6]
+]
+
+backup_grid = [
     ["-", "-", "-", "-", "-", "-", "-"],     # [R0C0, ..., R0C6]
     ["-", "-", "-", "-", "-", "-", "-"],     # [R1C0, ..., R1C6]
     ["-", "-", "-", "-", "-", "-", "-"],     # [R2C0, ..., R2C6]
@@ -140,22 +150,35 @@ def check_right_diag():
 def check_draw():
     return remaining_spots == 0
 
+def print_win():
+    color = red_color
+    win_text = current_piece + " wins!"
+    if(current_piece.__eq__("R")):
+        win_text = "RED WINS!"
+    else:
+        win_text = "YELLOW WINS!"
+        color = yellow_color
+    screen.create_text(210, 500, text=win_text, fill=color, font=('Helvetica 15 bold'))
+
+def print_draw():
+    screen.create_text(210, 500, text="The Game ends in a Draw", fill="black", font=('Helvetica 15 bold'))
+
 
 def check_game_over():
     if check_row():
-        print(current_piece + " wins!")
+        print_win()        
         return True
     elif check_col():
-        print(current_piece + " wins!")
+        print_win()        
         return True
     elif check_left_diag():
-        print(current_piece + " wins!")
+        print_win()        
         return True
     elif check_right_diag():
-        print(current_piece + " wins!")
+        print_win()        
         return True
     elif check_draw():
-        print("The Game Ends in a Draw!")
+        print_draw()
         return True
     else:
         return False
@@ -177,7 +200,6 @@ def handle_click(e):
     elif mouse_x >= 4 * col_width and mouse_x < 5 * col_width:
         current_col_choice = 4
     elif mouse_x >= 5 * col_width and mouse_x < 6 * col_width:
-        print(mouse_x)
         current_col_choice = 5
     elif mouse_x >= 6 * col_width and mouse_x < 7 * col_width:
         current_col_choice = 6
@@ -188,13 +210,34 @@ def handle_click(e):
     if(piece_placed):
         current_piece = "Y" if current_piece.__eq__("R") else "R"
 
-def print_intro():
-    print("Welcome to CONNECT FOUR")
-    draw_grid()
+def restart(e):
+    print(e.char)
+
+    if(e.char.__eq__("r")):
+        global is_game_over
+        global current_col_choice
+        global piece_placed
+        global grid
+        global backup_grid
+        is_game_over = False
+        current_col_choice = -1
+        piece_placed = False
+
+        for row in range(total_rows):
+            for col in range(total_cols):
+                grid[row][col] = backup_grid[row][col]
+        screen.delete("all")
+        draw_grid()
+
 
 
 screen.bind("<Button-1>", handle_click)
 
-print_intro()
+screen.bind("<Key>", restart)
+
+draw_grid()
+
+screen.create_text(210, 575, text="Type R to restart", fill="black", font=('Helvetica 15 bold'))
+
 
 mainloop()
