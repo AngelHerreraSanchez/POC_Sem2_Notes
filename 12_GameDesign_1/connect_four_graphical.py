@@ -1,7 +1,6 @@
 from tkinter import *
 
 root = Tk()
-root.title = "CONNECT FOUR"
 
 grid_color = "#003AFF"
 red_color = "#FF1800"
@@ -21,15 +20,6 @@ screen.pack()
 
 
 grid = [
-    ["-", "-", "-", "-", "-", "-", "-"],     # [R0C0, ..., R0C6]
-    ["-", "-", "-", "-", "-", "-", "-"],     # [R1C0, ..., R1C6]
-    ["-", "-", "-", "-", "-", "-", "-"],     # [R2C0, ..., R2C6]
-    ["-", "-", "-", "-", "-", "-", "-"],     # [R3C0, ..., R3C6]
-    ["-", "-", "-", "-", "-", "-", "-"],     # [R4C0, ..., R4C6]
-    ["-", "-", "-", "-", "-", "-", "-"]      # [R5C0, ..., R5C6]
-]
-
-backup_grid = [
     ["-", "-", "-", "-", "-", "-", "-"],     # [R0C0, ..., R0C6]
     ["-", "-", "-", "-", "-", "-", "-"],     # [R1C0, ..., R1C6]
     ["-", "-", "-", "-", "-", "-", "-"],     # [R2C0, ..., R2C6]
@@ -152,7 +142,7 @@ def check_draw():
 
 def print_win():
     color = red_color
-    win_text = current_piece + " wins!"
+    win_text = ""
     if(current_piece.__eq__("R")):
         win_text = "RED WINS!"
     else:
@@ -210,34 +200,33 @@ def handle_click(e):
     if(piece_placed):
         current_piece = "Y" if current_piece.__eq__("R") else "R"
 
-def restart(e):
-    print(e.char)
-
-    if(e.char.__eq__("r")):
-        global is_game_over
-        global current_col_choice
-        global piece_placed
-        global grid
-        global backup_grid
-        is_game_over = False
-        current_col_choice = -1
-        piece_placed = False
-
-        for row in range(total_rows):
-            for col in range(total_cols):
-                grid[row][col] = backup_grid[row][col]
-        screen.delete("all")
-        draw_grid()
-
-
-
 screen.bind("<Button-1>", handle_click)
-
-screen.bind("<Key>", restart)
 
 draw_grid()
 
-screen.create_text(210, 575, text="Type R to restart", fill="black", font=('Helvetica 15 bold'))
+def reset():
+    global is_game_over
+    global current_col_choice
+    global piece_placed
+    global current_piece
+    global last_row
+    global last_col
+    global remaining_spots
+    is_game_over = False
+    current_col_choice = -1
+    piece_placed = False
+    current_piece = "R"
+    last_row = -1
+    last_col = -1
+    remaining_spots = 42
+    for row in range(total_rows):
+        for col in range(total_cols):
+            grid[row][col] = "-"
+    screen.delete("all")
+    draw_grid()
+    
 
+reset_button = Button(root, text="Reset", command=reset)
+reset_button.pack()
 
 mainloop()
