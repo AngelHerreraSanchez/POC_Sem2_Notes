@@ -58,10 +58,7 @@ class Game(tk.Frame):
 
     def start_game(self):
         pass
-
-    
-
-
+  
 class GameObject(object):
     def __init__(self, canvas, item):
         self.canvas = canvas
