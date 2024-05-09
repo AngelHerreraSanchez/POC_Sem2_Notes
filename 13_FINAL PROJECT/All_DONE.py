@@ -85,7 +85,6 @@ class Game(tk.Frame):
         objects = [self.items[x] for x in items if x in self.items]
         self.ball.collide(objects)
 
-  
 class GameObject(object):
     def __init__(self, canvas, item):
         self.canvas = canvas
@@ -145,8 +144,6 @@ class Ball(GameObject):
             if(isinstance(game_object, Brick)):
                 game_object.hit()
 
-
-
 class Paddle(GameObject):
     def __init__(self, canvas, x, y):  #(x, y) is the center of the paddle
         #YOUDO-09:  create a width variable for self and set to 80
@@ -195,9 +192,7 @@ class Brick(GameObject):
         #YOUDO-26:  subtract one from self.hits
         #YOUDO-27:  check if self.hits is equal to 0.  If it is call self.delete().  If not 
         #YOUDO-27-part2:  call self.canvas.itemconfig(self.item, fill=Brick.COLORS[self.hits])
-        pass #YOUDO-28:  Remove this pass
-
-    
+        pass #YOUDO-28:  Remove this pass    
 
 if __name__ == "__main__":    
     root = tk.Tk()
