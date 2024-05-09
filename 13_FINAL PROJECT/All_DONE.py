@@ -80,7 +80,7 @@ class Game(tk.Frame):
             self.after(50, self.game_loop())
 
     def check_collisions(self):
-        #YOUDO_38:  get the ball's coords from self.get.get_position and store in ball_coords
+        #YOUDO_38:  get the ball's coords from self.get_position and store in ball_coords
         items = self.canvas.find_overlapping(*ball_coords)
         objects = [self.items[x] for x in items if x in self.items]
         self.ball.collide(objects)
