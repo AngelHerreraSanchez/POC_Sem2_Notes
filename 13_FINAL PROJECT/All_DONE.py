@@ -132,7 +132,7 @@ class Ball(GameObject):
             pass  #YOUDO-33:  remove this when done
         elif len(game_objects) == 1:
             game_object = game_objects[0]
-            #YOUDO-34:  create a coords variable from get_position like before
+            #YOUDO-34:  create a coords variable for game_object from get_position like before
             if x > coords[2]:
                 self.direction[0] = 1
             elif x < coords[0]:
