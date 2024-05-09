@@ -138,7 +138,7 @@ class Ball(GameObject):
             elif x < coords[0]:
                 self.direction[0] = -1
             else:
-                self.direction[1] * -1 
+                self.direction[1] *= -1 
         
         for game_object in game_objects:
             if(isinstance(game_object, Brick)):
