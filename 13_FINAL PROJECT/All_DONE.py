@@ -163,7 +163,7 @@ class Paddle(GameObject):
 
     def move(self, offset):
         coords = self.get_position()
-        width = self.canvas.winfo.width()
+        width = self.canvas.winfo_width()
         x1 = coords[0]
         y1 = coords[1]
         x2 = coords[2]
